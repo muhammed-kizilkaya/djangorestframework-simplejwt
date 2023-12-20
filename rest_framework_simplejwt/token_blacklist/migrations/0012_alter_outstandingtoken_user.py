@@ -7,7 +7,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        migrations.swappable_dependency(settings.MOBILE_USER_MODEL),
         ("token_blacklist", "0011_linearizes_history"),
     ]
 
@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 blank=True,
                 null=True,
                 on_delete=django.db.models.deletion.SET_NULL,
-                to=settings.AUTH_USER_MODEL,
+                to=settings.MOBILE_USER_MODEL,
             ),
         ),
     ]

@@ -7,7 +7,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        migrations.swappable_dependency(settings.MOBILE_USER_MODEL),
     ]
 
     operations = [
@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
                     "user",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to=settings.AUTH_USER_MODEL,
+                        to=settings.MOBILE_USER_MODEL,
                     ),
                 ),
             ],
