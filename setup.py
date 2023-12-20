@@ -49,7 +49,7 @@ setup(
     name="djangorestframework_simplejwt",
     use_scm_version={"version_scheme": "post-release"},
     setup_requires=["setuptools_scm"],
-    url="https://github.com/jazzband/djangorestframework-simplejwt",
+    url="https://github.com/muhammed-kizilkaya/djangorestframework-simplejwt",
     license="MIT",
     description="A minimal JSON Web Token authentication plugin for Django REST Framework",
     long_description=Path("README.rst").read_text(encoding="utf-8"),
